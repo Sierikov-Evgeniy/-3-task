@@ -1,21 +1,24 @@
 
-let a = [];
-let b = () =>{
+let array = [];
+let randomArray = () =>{
     return Math.round(100*Math.random());
 }
 
-let c = () =>{
+let finalRandomArray = () =>{
     for(let i = 0 ; i < 10 ; i++){
-        a.push(b());
+        array.push(randomArray());
     }
-    console.log(a)
+    console.log(array)
 }
 
-c()
+finalRandomArray()
 
 
  
-a.sort(function(A, B) {
-  return A - B;
+array.sort(function(a, b) {
+  return a - b;
 });
-console.log(a); 
+console.log(array); 
+
+
+console.log(array.reverse());
